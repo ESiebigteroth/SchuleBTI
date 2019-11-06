@@ -14,6 +14,7 @@ public class Verkaeufer {
     public int getBisherVerdienteProvisionen() {
         return bisherVerdienteProvisionen;
     }
+    Verkaeufer Eric_Mueller = new Verkaeufer();
 
     public String getName() {
         return name;

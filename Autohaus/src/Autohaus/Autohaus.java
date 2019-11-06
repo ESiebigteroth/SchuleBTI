@@ -10,5 +10,10 @@ public class Autohaus {
         Auto JannikFord = new Auto();
         JannikFord.setFarbe("spacegrey");
         JannikFord.setKaufpreis(8000);
+        Verkaeufer mitarbeiterMueller = new Verkaeufer();
+        mitarbeiterMueller.setName("Erich Mueller");
+        mitarbeiterMueller.setBisherVerdienteProvisionen(800);
+        System.out.println("Der Mitarbeiter mitarbeiterMueller hat den Namen :"+ mitarbeiterMueller.getName());
+        System.out.println("Der Mitarbeiter mitarbeiterMueller verdiente an Provisionen "+ mitarbeiterMueller.getBisherVerdienteProvisionen());
     }
 }
