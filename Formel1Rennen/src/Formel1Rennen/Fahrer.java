@@ -4,6 +4,7 @@ public class Fahrer {
     public int Rangfolge;
     private Auto autoDesFahrers;
     public String Name;
+    public int tempo;
 
 
     public void drückeGaspedal(int wieviel){
@@ -12,8 +13,17 @@ public class Fahrer {
     public void drückeBremspedal(int wieviel){
         autoDesFahrers.Bremse(wieviel);
     }
-    public void leiteBoxenstopein(boolean test){
-        autoDesFahrers.Bremse();
+    public void leiteBoxenstopein(){
+        autoDesFahrers.setBoxenstop(true);
+        autoDesFahrers.Bremse(0);
+    }
+    public void endeBoxenstop(int tempo){
         autoDesFahrers.setTankfuellung(30);
+        autoDesFahrers.setBoxenstop(false);
+        autoDesFahrers.Beschleunige(tempo);
+    }
+
+    public void setRangfolge(int rangfolge) {
+        Rangfolge = rangfolge;
     }
 }

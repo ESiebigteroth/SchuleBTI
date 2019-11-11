@@ -16,4 +16,8 @@ public class Auto {
     public void setTankfuellung(int tankfuellung) {
         Tankfuellung = tankfuellung;
     }
+
+    public void setBoxenstop(boolean boxenstop) {
+        Boxenstop = boxenstop;
+    }
 }
