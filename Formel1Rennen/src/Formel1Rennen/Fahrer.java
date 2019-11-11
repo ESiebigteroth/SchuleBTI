@@ -15,7 +15,7 @@ public class Fahrer {
     }
     public void leiteBoxenstopein(){
         autoDesFahrers.setBoxenstop(true);
-        autoDesFahrers.Bremse(0);
+        autoDesFahrers.Bremse(autoDesFahrers.getGeschwindigkeit());
     }
     public void endeBoxenstop(int tempo){
         autoDesFahrers.setTankfuellung(30);
@@ -25,5 +25,13 @@ public class Fahrer {
 
     public void setRangfolge(int rangfolge) {
         Rangfolge = rangfolge;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getName() {
+        return Name;
     }
 }

@@ -20,4 +20,8 @@ public class Auto {
     public void setBoxenstop(boolean boxenstop) {
         Boxenstop = boxenstop;
     }
+
+    public int getGeschwindigkeit() {
+        return Geschwindigkeit;
+    }
 }
