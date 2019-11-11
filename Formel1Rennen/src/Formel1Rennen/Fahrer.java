@@ -6,6 +6,13 @@ public class Fahrer {
     public String Name;
     public int tempo;
 
+    public Fahrer(){
+        autoDesFahrers = new Auto();
+        Rangfolge = 1;
+        autoDesFahrers.setBoxenstop(false);
+        autoDesFahrers.setTankfuellung(30);
+        autoDesFahrers.Bremse(autoDesFahrers.getGeschwindigkeit());
+    }
 
     public void drückeGaspedal(int wieviel){
         autoDesFahrers.Beschleunige(wieviel);
