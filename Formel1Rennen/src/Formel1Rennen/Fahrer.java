@@ -14,10 +14,10 @@ public class Fahrer {
         autoDesFahrers.Bremse(autoDesFahrers.getGeschwindigkeit());
     }
 
-    public void drückeGaspedal(int wieviel){
+    public void drueckeGaspedal(int wieviel){
         autoDesFahrers.Beschleunige(wieviel);
     }
-    public void drückeBremspedal(int wieviel){
+    public void drueckeBremspedal(int wieviel){
         autoDesFahrers.Bremse(wieviel);
     }
     public void leiteBoxenstopein(){
