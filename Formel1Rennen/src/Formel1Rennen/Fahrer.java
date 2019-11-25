@@ -5,9 +5,11 @@ public class Fahrer {
     private Auto autoDesFahrers;
     public String Name;
     public int tempo;
+    public int KM;
 
     public Fahrer(){
         autoDesFahrers = new Auto();
+        KM = 0;
         Rangfolge = 1;
         autoDesFahrers.setBoxenstop(false);
         autoDesFahrers.setTankfuellung(30);
@@ -17,6 +19,15 @@ public class Fahrer {
     public void drueckeGaspedal(int wieviel){
         autoDesFahrers.Beschleunige(wieviel);
     }
+
+    public void setKM(int KM) {
+        this.KM = KM;
+    }
+
+    public int getKM() {
+        return KM;
+    }
+
     public void drueckeBremspedal(int wieviel){
         autoDesFahrers.Bremse(wieviel);
     }
