@@ -34,4 +34,12 @@ public class Fahrer {
     public String getName() {
         return Name;
     }
+
+    public int getGeschwindigkeit() {
+        return autoDesFahrers.getGeschwindigkeit();
+    }
+
+    public void setGeschwindigkeit(int geschwindigkeit) {
+        autoDesFahrers.setGeschwindigkeit(geschwindigkeit);
+    }
 }

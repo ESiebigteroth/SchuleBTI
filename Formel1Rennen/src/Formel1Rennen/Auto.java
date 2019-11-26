@@ -24,4 +24,8 @@ public class Auto {
     public int getGeschwindigkeit() {
         return Geschwindigkeit;
     }
+
+    public void setGeschwindigkeit(int geschwindigkeit) {
+        Geschwindigkeit = geschwindigkeit;
+    }
 }
