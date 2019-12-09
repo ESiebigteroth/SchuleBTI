@@ -1,4 +1,4 @@
-package Formel1Rennen;
+package Auto;
 import java.util.Random;
 
 
@@ -10,8 +10,6 @@ public class Rennen {
         int[] MeineZahl = new int[20];
         Fahrer[] alleFahrer = new Fahrer[5];
 
-        Random rand = new Random();
-        int Zufall = rand.nextInt(99)+1;
 
         for (int i = 0; i == 4; i++);{
             alleFahrer[i] = new Fahrer();
@@ -20,9 +18,6 @@ public class Rennen {
         alleFahrer[1].setName("Test2");
         alleFahrer[2].setName("Test3");
         alleFahrer[3].setName("Test4");
-
-
-
 
 
         while (Ziel == false){
